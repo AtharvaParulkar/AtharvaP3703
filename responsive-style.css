@@ -1,0 +1,139 @@
+
+#check{
+    display: none;
+}
+/* Responsive ness starts */
+@media(max-width:1169px) and (min-width:858px){
+    .menu ul{
+        display: none;
+    }
+    
+}
+@media(max-width:800px) and (min-width:523px){
+label.logo{
+    letter-spacing: 3px;
+   font-size: 25px;
+   padding: 64px;
+}
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+   
+   .menu{
+    position:absolute;
+    letter-spacing: 5px;
+    box-shadow: 0px 3px 4px 6px yellowgreen;
+    background:green;
+   }
+   label.logo{
+    color:aqua;
+   }
+    .menu ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #03574c;
+        top:50px;
+        left: -60%;
+        text-align: center;
+       transition:  all 2s;
+       transition: transform 2s;
+      
+    }
+    .menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    
+    }
+    .menu ul li a{
+        font-size: 30px;
+        color: white;
+    
+    }
+    a:hover,a.active{
+        background: none;
+        color: yellowgreen;
+        transform: translate(-230px);
+       
+    }
+    #check:checked ~ ul{
+        left :0;
+    }
+
+    
+  /*@media(max-width:858px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top:80px;
+    left: -100%;
+    text-align: center;
+   transition: all 1s;
+}
+.menu ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+a:hover,a.active{
+    background: none;
+    color: yellowgreen;
+}
+#check:checked ~.navigation{
+    left :0;
+}
+#check:checked ~ a{
+    left:100%;
+}
+  }
+  @media(max-width:858px){ */
+    /* profile section */
+    .profile{
+        display: flex;
+        flex-direction:column;
+        font-size: 30px;
+        justify-content: center;
+        text-align: justify;
+        width: 100%;
+    }
+    /* span tag responsiveness */
+ 
+    /* Skill knowledge responsiveness */
+    .skill{
+        grid-template-columns:repeat(2,1fr);
+        height: 755px;
+        background-color: white;
+        grid: ("gape 23px");
+     }
+     .name{
+        color: black;
+     }
+    /* Education Responsiveness */
+
+    .education .school1,.school2,.school3,.school4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sc1,#sc2,#sc3,#sc4 {
+        width: 50%;
+    }
+  
+    /* FOOTER RESPONSIVENESS */
+
+ /* Project section */
+ .css-grid{
+    grid-template-columns: 1fr;
+ }
+}
+ /* PROJECT RESPONSIVENESS */
+ 
